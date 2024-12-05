@@ -8,6 +8,10 @@ public class ContarDigitos {
         int numero = entrada.nextInt();
         int contadorDeDigitos = 0;
 
-
+        while (numero != 0){
+            numero/= 10;
+            contadorDeDigitos++;
+        }
+        System.out.println(contadorDeDigitos);
     }
 }
